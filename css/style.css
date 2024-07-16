@@ -1,5 +1,5 @@
-@import "./partials/media-queries";
-@import "./partials/variables";
+@import "./partials/.media-queries";
+@import "./partials/.variables";
 @import "./partials/fonts";
 @import "./partials/_restart.scss";
 

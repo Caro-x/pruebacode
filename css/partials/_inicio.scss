@@ -1,0 +1,841 @@
+.inicioNav {
+    width: 100%;
+
+    display: grid;
+    grid-column: 2fr 2fr;
+    position: fixed;
+    z-index: 2;
+
+    box-shadow: 2px 2px 10px black;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-bottom-color: rgb(0, 0, 170);
+
+    
+
+    .contenedorInicioLogo{
+
+        width: 30%;
+    
+        background-color: $colorNav2;
+
+        
+    
+        .contenedorLogoInicio {
+    
+            img {
+
+                padding: 10px;
+    
+                width: 7rem;
+                position: fixed;
+
+                z-index: 2;
+
+                @include tablet {
+                    width: 7rem;
+                }
+                
+                @include mobile {
+                    width: 5rem;
+                }
+               
+            }
+        }
+    }
+    
+    
+    .contenedorInicioNav {
+    
+        width: 100%;
+        height: 10vh;
+    
+        background-color: $colorNav2;
+
+
+        @include tablet {
+
+            height: 8vh;
+
+        }
+        
+        @include mobile {
+
+            height: 7vh;
+            
+        }
+
+        
+    
+    
+        .ulInicio {
+    
+            width: 100%;
+
+            padding: 1rem;
+    
+            display: flex;
+            justify-content: center;
+            
+
+            @include tablet {
+
+            }
+            
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                
+            }
+            
+            
+            
+            .liInicio {           
+                           
+                padding: 1rem;
+                font-size: 1.7rem;
+
+                @include tablet {
+                    font-size: 1.2rem;
+                    padding: .5rem ;
+                }
+
+                @include mobile{
+                    font-size: 0.9rem;
+                    padding: 0.3rem;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                }
+                
+    
+            }
+    
+    
+        }
+    }
+}
+
+/*************************************************************************************/
+/*------------------------------------MAIN-------------------------------------------*/
+/*************************************************************************************/
+
+
+.contenedorFrase {
+
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../../img/fondo-inicio2.jpeg);
+    background-size: cover;
+    
+    .inicioFrase {
+        width: 100%;
+        height: 90vh;
+
+        background-color: rgba(17, 17, 17, 0.432);
+        backdrop-filter: blur(10px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        h2{            
+            width: 90%;
+            padding: 3rem;
+            font-size: 5rem;
+            text-align: center;
+            font-family: $letraTexto-Hardline;
+            text-shadow: 3px 3px 2px black;
+
+            @include tablet {
+                font-size: 4rem;
+            }
+
+            @include mobile {
+                font-size: 2rem;
+            }
+
+        }
+    
+    }
+     
+}
+
+.contenedorInformacionSet{
+
+    width: 100%;
+    height: 100vh;
+    background-color: $colorNav;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .informacionSet {
+        width: 80%;
+        height: auto;
+
+        padding: 2rem;
+        border: 0px;
+        border-bottom: 1px;
+        border-bottom-color: rgb(0, 0, 255);
+        border-style: solid;
+
+        .h2Inicio {
+
+            padding: 2rem;
+            font-size: 4rem;
+            text-align: center;
+            font-family: $Arsenal;
+
+            @include tablet {
+
+                padding: 1rem;
+                font-size: 2rem;
+
+            }
+
+            @include mobile {
+                padding: 1rem;
+                font-size: 1rem;
+
+            }
+            
+        }
+
+        .textoInformacion {
+
+            font-family: $letraTexto-Extralight;
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px black;
+
+            @include tablet {
+
+                font-size: 1.6rem;
+
+            }
+
+            @include mobile {
+                
+                font-size: 1rem;
+
+            }
+        }
+
+    }
+
+    
+
+}
+
+/*************************************************************************************/
+/*----------------------------------SECCION 2----------------------------------------*/
+/*************************************************************************************/
+
+
+.seccion2Inicio{
+
+    width: 100%;
+    height: 150vh;
+
+    background-color: $colorFondo1;
+
+    display: grid;
+    grid-template-columns:  repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    ". caja1 caja1  caja3  caja4   ."
+    ". caja1 caja1  caja10 caja10  . "
+    ". linea1 linea1 caja10 caja10 ."
+    ".  .     .        .     .     ."
+    ". caja13 caja13 caja13 caja13 .";
+
+
+    @include tablet {
+          
+
+        height: 200vh;
+
+        display: grid;
+        grid-template-columns:  repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        ". caja1 caja1  caja1  caja1  . "
+        ". caja1 caja1  caja1  caja1  . "
+        ". linea1  linea1   linea1  linea1 . "
+        ".caja10 caja10 caja10 caja10 ."
+        ". caja13 caja13 caja13 caja13 .";
+
+    }
+
+    @include mobile {
+
+        height: 200vh;
+
+        display: grid;
+        grid-template-columns:  repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "caja1 caja1 caja1  caja1  caja1  caja1 "
+        "caja1 caja1 caja1  caja1  caja1  caja1 "
+        "linea1 linea1  linea1   linea1  linea1 linea1 "
+        "caja10 caja10 caja10 caja10 caja10 caja10"
+        "caja13 caja13 caja13 caja13 caja13 caja13";
+
+    }
+
+    .contenedorResumen {
+
+        grid-area: caja1;
+
+        width: 100%;
+        height: 60vh;
+
+        padding: 10px;
+        
+        text-align: center;
+        font-size: 2.5rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            height: 50vh;
+            font-size: 2rem;
+            padding: 7px;
+        }
+
+        @include mobile {
+            height: 30vh;
+            margin-top: 10rem;
+            font-size: 1.5rem;
+            padding: 5px ;
+        }
+
+        
+
+        .resumenRequerimiento {
+
+            width: 100%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0px;
+            border-right: 1px;
+            border-left: 1px;
+            border-style: solid;
+
+            
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+
+                @include tablet {
+                    font-size: 2rem;
+
+                }
+        
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+
+                @include tablet {
+
+                    padding: 1rem;
+                    font-size: 1rem;
+
+                }
+        
+                @include mobile {
+
+                    padding: .5rem;
+                    font-size: 0.7;
+                    
+                }
+            }
+
+            button{
+                background-color: $colorFondo1;
+                text-shadow: 1px 1px 2px $colorFondo1;
+
+                padding: 0.1rem;
+                border-radius: 10px;
+
+                &:hover {
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
+                }
+
+                @include tablet {
+
+                    font-size: .5rem;
+                    padding: 0.2rem;
+                }
+                
+                @include mobile {
+
+                    font-size: .4rem;
+                    padding: 0.1rem;
+                    
+                }
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+
+
+   .contenedorSets{
+
+        
+        grid-area: caja10;
+
+        width: 100%;
+        height: 70vh;
+
+        padding: 10px;
+        
+        text-align: center;
+        font-size: 2.5rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        
+        .resumenSets{
+            
+            width: 100%;
+            height: auto;
+            
+            padding: 1rem;
+
+            border: 0px;
+            border-top: 1px;
+            border-bottom: 1px;
+            border-style: solid;
+
+            @include tablet {
+                font-size: 2rem;
+
+            }
+    
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+
+                @include tablet {
+                    font-size: 2rem;
+
+                }
+        
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+
+                @include tablet {
+
+                    padding: 1rem;
+                    font-size: 1rem;
+
+                }
+        
+                @include mobile {
+
+                    padding: .5rem;
+                    font-size: 0.7;
+                    
+                }
+
+                
+            }
+
+            button{
+                background-color: $colorFondo1;
+                text-shadow: 1px 1px 2px black;
+
+                padding: 0.1rem;
+                border-radius: 10px;
+
+                &:hover {
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
+                }
+                
+                @include tablet {
+
+                    font-size: .5rem;
+                    padding: 0.2rem;
+                }
+                
+                @include mobile {
+
+                    font-size: .4rem;
+                    padding: 0.1rem;
+                    
+                }
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+
+   }
+   
+    .contenedorLinea {
+
+        grid-area: linea1;
+        width: 100%;
+        height: auto;
+
+        margin-top: 10rem;
+
+        @include tablet {
+
+            margin-top: 15rem;
+
+        }
+
+        @include mobile {
+            margin-top: 30rem;
+        }
+
+    
+        .linea{
+            width: 100%;
+            height: 10vh;
+            border-bottom: 1px;
+            border-top: 1px;
+            border-left: 0;
+            border-style: solid;
+            border-right: 0;
+            border-color: blue;
+
+            
+        }
+
+
+    }
+
+    
+
+   .contenedorBiografia {
+
+        grid-area: caja13;
+
+        width: 100%;
+        height: auto;
+
+        padding: 10px;
+            
+        text-align: center;
+        font-size: 2.5rem;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .resumenBiografia{
+
+            width: 100%;
+            height: auto;
+
+            padding: 1rem;
+
+            border: 0px;
+            border-left: 1px;
+            border-style: solid;
+            
+
+
+            h3 {
+                
+                font-family: $Arsenal;
+                font-size: 4rem;
+
+                @include tablet {
+                    font-size: 2rem;
+
+                }
+        
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+
+            p{
+                font-family: $letraTexto-Extralight;
+
+                padding: 1.5rem;
+
+                @include tablet {
+
+                    padding: 1rem;
+                    font-size: 1rem;
+
+                }
+        
+                @include mobile {
+
+                    padding: .5rem;
+                    font-size: 0.7;
+                    
+                }
+            }
+
+            button{
+                background-color: #212121;
+                text-shadow: 1px 1px 2px #212121;
+
+                padding: 0.1rem;
+                border-radius: 10px;
+                
+
+                &:hover {
+                    border-radius: 10px;
+                    background-color: #212121;
+                    color: rgb(201, 201, 201);
+                    
+                    
+                }
+                @include tablet {
+
+                    font-size: .5rem;
+                    padding: 0.2rem;
+                }
+                
+                @include mobile {
+
+                    font-size: .4rem;
+                    padding: 0.1rem;
+                    
+                }
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.contenedorFooter {
+
+    width: 100%;
+    height: 40vh;
+
+    background-color: $colorNav;
+
+    @include tablet {
+
+        height: 100vh;
+
+            
+    }
+    
+    @include mobile {
+
+        height: 100vh;
+        
+    }
+
+    .footer{
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr 1fr 1fr  ;
+        grid-template-areas: 
+        "datos1   datos1   datos1"
+        "columna4 columna2 columna3"
+        "columna4 columna2 columna3";
+
+        @include tablet {
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(5.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            "columna4 columna4 columna4"
+            "columna4 columna4 columna4"
+            "columna2 columna2 columna2"
+            "columna3  columna3  columna3";
+            
+        }
+        
+        @include mobile {
+
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(6.1fr) ;
+            grid-template-areas: 
+            "datos1   datos1   datos1"
+            ".        columna4  .    "
+            ".        columna4  .    "
+            ".        columna2  .    "
+            ".        columna2  .    "
+            ".        columna3  .    "
+            ".        columna3  .    ";
+        }
+
+        .logosRedes {
+
+            width: 100%;
+            grid-area: columna3;
+            
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            
+            @include tablet {
+
+                display: flex;
+                justify-content: center;
+                align-items: end; 
+
+            }
+            
+            @include mobile {
+                padding-left: 3rem;
+                padding-top: 2rem;
+                
+                display: flex;
+                justify-content: center;
+                align-items: end; 
+            }
+
+            .iconos{
+
+                padding: .5rem;
+               
+            }
+
+        }
+
+        .informacionExtraFooter {
+
+            grid-area: columna2;
+            width: 100%;
+
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 1rem;
+
+            gap: .5rem;
+
+            @include tablet {
+                margin-top: 0;
+                text-align: center;
+            }
+            
+            @include mobile {
+
+                margin-top: 0;
+                text-align: center;
+                gap: 0;
+                
+            }
+
+
+        }
+
+        .derechosR{
+
+            width: 100%;
+            height: 5vh;
+
+            grid-area: datos1;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+
+            @include tablet {
+
+                text-align: center;
+
+            }
+            
+            @include mobile {
+                
+                font-size: 1rem;
+                text-align: center;
+                
+            }
+
+
+        }
+
+        
+
+    }
+}
+
+
+
+
+
+
